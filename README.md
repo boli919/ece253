@@ -4,22 +4,21 @@ This repository contains code for training and evaluating a number plate detecto
 
 ## Project Structure
 
-- `numberplate-fasterrcnn/`  
+- `numberplate-fasterrcnn.ipynb`  
   Baseline training code (train the initial Faster R-CNN model).
 
-- `finetune_numberplate_fasterrcnn_clean/`  
+- `finetune_numberplate_fasterrcnn_clean.ipynb`  
   Fine-tuning code (train the model starting from the baseline/pretrained weights).
 
-- `eval*` files (any file starting with `eval`)  
+- `eval_*.ipynb` files (any file starting with `eval`)  
   Evaluation scripts for testing recognition/detection performance on DIP-processed images (DIP = Digital Image Processing).
 
-## How to Use (High Level)
+## How to Use
 
-1. Train the baseline model using the code in `numberplate-fasterrcnn/`.
-2. Fine-tune the model using the code in `finetune_numberplate_fasterrcnn_clean/`.
-3. Run evaluation on DIP-processed images using the scripts that start with `eval`.
+1. Train the baseline model using the code in `numberplate-fasterrcnn.ipynb`.
+2. Fine-tune the model using the code in `finetune_numberplate_fasterrcnn_clean.ipynb`.
+3. Run evaluation on DIP-processed images using the scripts that start with `eval_*.ipynb`.
 
 ## Notes
 
 - Some evaluation scripts may require paths to images and labels/annotations depending on how the dataset is organized.
-- If you have multiple evaluation folders, run the corresponding `eval*` scripts for each folder.
